@@ -29,7 +29,7 @@ begin
             end if;
         end if;
         
-        if count = max_occupancy then
+        if count = unsigned(max_occupancy) then
             z <= '1';
         else
             z <= '0';
