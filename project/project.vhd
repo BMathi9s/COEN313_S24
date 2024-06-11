@@ -13,6 +13,7 @@ end project;
 
 architecture project of project is
     signal count : unsigned(5 downto 0) := (others => '0');
+    signal max_occ : unsigned(5 downto 0) := "111111"; --by default set to 63
 begin
     process(reset, x, y)
     begin 
@@ -29,6 +30,8 @@ begin
             end if;
         end if;
         
+        max_occ <= unsigned(max_occupancy); -- setting up the max 
+        --set output
         if count = unsigned(max_occupancy) then
             z <= '1';
         else
