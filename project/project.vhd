@@ -12,17 +12,18 @@ entity project is
 end project;
 
 architecture project of project is
-    signal count: std_logic_vector(5 downto 0) := "000000";
+    signal count : unsigned(5 downto 0) := (others => '0');
 begin
     process(reset, x, y)
     begin 
         if reset = '1' then
             count <= (others => '0');
         else
-            if x = '1' and count < "111111" then -- Check for overflow condition
-                count <= count + 1;
-            elsif y = '1' and count > "000000" then -- Check for underflow condition
-                count <= count - 1;
+            if x = '1' and count < "111111" then -- Check overflow condition
+                count <= std_logic_vector(unsigned(count) + 1); --here arythmetic equation, gotta pass
+                -- class and tutorial said we had to do that, but works  fine without
+            elsif y = '1' and count > "000000" then -- Check underflow condition
+                count <= std_logic_vector(unsigned(count) - 1);
             end if;
         end if;
         
