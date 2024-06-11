@@ -1,0 +1,32 @@
+
+To show the delta cycle execution of the
+vsim simulator, from the Wave window select :
+
+ View -> Expanded Time -> Deltas mode
+
+
+Then , select on of :
+ 
+ View -> Expanded Time -> Expand All
+                          Expand Range
+                          Expand Cursor
+
+
+depending on whether you wish to view all the delta cycles,
+or the delta cycles associatate with where the View Cursor
+has been placed, or the delta cycles within a range.
+
+The simulator expands the delta cycles as shows the
+various delta cycles using the notation:
+
+2ns + 1    2 ns + 2   
+      --        ----
+    first        second
+    delta        delta
+
+
+add an internal signal to your DO file, then run the simulation
+and then do the above to view the various delta cycles associated
+when a top-level input port changes at a particular simulation time.
+
+

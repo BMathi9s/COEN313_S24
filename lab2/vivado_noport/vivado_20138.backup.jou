@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May 21 20:07:53 2024
+# Process ID: 20138
+# Current directory: /nfs/home/d/de_math/COEN313/lab2/vivado_noport
+# Command line: vivado
+# Log file: /nfs/home/d/de_math/COEN313/lab2/vivado_noport/vivado.log
+# Journal file: /nfs/home/d/de_math/COEN313/lab2/vivado_noport/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project lab2_noport /nfs/home/d/de_math/COEN313/lab2/vivado_noport/lab2_noport -part xc7a100tcsg324-1
+add_files -norecurse /nfs/home/d/de_math/COEN313/lab2/vivado_noport/lab2_noport.vhd
+add_files -fileset constrs_1 -norecurse /nfs/home/d/de_math/COEN313/lab2/vivado_noport/lab2.xdc
+update_compile_order -fileset sources_1
+set_property target_constrs_file /nfs/home/d/de_math/COEN313/lab2/vivado_noport/lab2.xdc [current_fileset -constrset]
+synth_design -rtl -name rtl_1
+add_files -norecurse /nfs/home/d/de_math/COEN313/lab2/vivado_noport/lab2_noport.vhd
+export_ip_user_files -of_objects  [get_files /nfs/home/d/de_math/COEN313/lab2/vivado_noport/lab2.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 /nfs/home/d/de_math/COEN313/lab2/vivado_noport/lab2.xdc

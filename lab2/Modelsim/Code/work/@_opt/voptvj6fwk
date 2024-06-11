@@ -1,0 +1,87 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/d/de_math/COEN313/lab2/Modelsim/Code
+T_opt
+Z1 V5Z4EE;6ikIJj<ET9JLJ;l3
+Z2 04 4 10 work sums structural 1
+Z3 =1-c8d9d233c371-664d2905-b063d-30b0
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.6g;45
+Z7 d/home/d/de_math/COEN313/lab2/Modelsim/Code
+Eand3_gate
+Z8 w1716332401
+Z9 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+R7
+Z10 8and3.vhd
+Z11 Fand3.vhd
+l0
+L3
+Z12 Ve7NcHXe?a``R3I2GXTcbW3
+Z13 OL;C;6.6g;45
+32
+Z14 tExplicit 1
+Z15 !s100 k8Hk2?g<Y9BAW7=hO>W]T0
+Aexample
+R9
+Z16 DEx4 work 9 and3_gate 0 22 e7NcHXe?a``R3I2GXTcbW3
+l9
+L9
+Z17 Vlz7N@G[8MU[k2?E68g^UK1
+R13
+32
+Z18 Mx1 4 ieee 14 std_logic_1164
+R14
+Z19 !s100 d>lN]VDXm8NECPignfn>_1
+Eor3_gate
+Z20 w1716332437
+R9
+R7
+Z21 8or3.vhd
+Z22 For3.vhd
+l0
+L3
+Z23 Vk5[Ho3;co8bL69En0AmHm0
+R13
+32
+R14
+Z24 !s100 WP[o`63dF1oUDJY>;@mA<1
+Aexample
+R9
+Z25 DEx4 work 8 or3_gate 0 22 k5[Ho3;co8bL69En0AmHm0
+l9
+L9
+Z26 VA;3e;cd^k5BjTeDmLK8oa1
+R13
+32
+R18
+R14
+Z27 !s100 klAiK6i=:C7`j;`nP3L9=0
+Esums
+Z28 w1716332787
+Z29 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+R7
+Z30 8lab2.vhd
+Z31 Flab2.vhd
+l0
+L4
+Z32 V7T]caNIge@E5?mARnoXcC2
+R13
+R14
+Z33 !s100 :7j=IPeBnV61SOk5b1oV:2
+Astructural
+DEx51 /nfs/home/d/de_math/COEN313/lab2/Modelsim/Code/work 8 or3_gate 0 22 k5[Ho3;co8bL69En0AmHm0
+Z34 DEx51 /nfs/home/d/de_math/COEN313/lab2/Modelsim/Code/work 9 and3_gate 0 22 e7NcHXe?a``R3I2GXTcbW3
+R29
+Z35 DEx51 /nfs/home/d/de_math/COEN313/lab2/Modelsim/Code/work 4 sums 0 22 7T]caNIge@E5?mARnoXcC2
+32
+Z36 Mx1 17 __model_tech/ieee 14 std_logic_1164
+l35
+L9
+Z37 VNAcDLeLc8`g`_z?hmK__n0
+R13
+R14
+Z38 !s100 3GE>cPzmMW_RHRBQOiDeG2

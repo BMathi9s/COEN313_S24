@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May 14 19:39:51 2024
+# Process ID: 9243
+# Current directory: /nfs/home/d/de_math/COEN313/lab1
+# Command line: vivado
+# Log file: /nfs/home/d/de_math/COEN313/lab1/vivado.log
+# Journal file: /nfs/home/d/de_math/COEN313/lab1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project lab_1 /nfs/home/d/de_math/COEN313/lab1/lab_1 -part xc7a100tcsg324-1
+add_files -norecurse {/nfs/home/d/de_math/COEN313/lab1/half_adder_regular_outputs.vhd /nfs/home/d/de_math/COEN313/lab1/full_adder_nexysboard.vhd}
+add_files -fileset constrs_1 -norecurse /nfs/home/d/de_math/COEN313/lab1/fulladder.xdc
+update_compile_order -fileset sources_1
+set_property target_constrs_file /nfs/home/d/de_math/COEN313/lab1/fulladder.xdc [current_fileset -constrset]
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/nfs/home/d/de_math/COEN313/lab1/lab_1/lab_1.runs/impl_1/full_adder.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/nfs/home/d/de_math/COEN313/lab1/lab_1/lab_1.runs/impl_1/full_adder.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

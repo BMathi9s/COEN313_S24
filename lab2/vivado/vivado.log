@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May 21 19:23:56 2024
+# Process ID: 13786
+# Current directory: /nfs/home/d/de_math/COEN313/lab2/vivado
+# Command line: vivado
+# Log file: /nfs/home/d/de_math/COEN313/lab2/vivado/vivado.log
+# Journal file: /nfs/home/d/de_math/COEN313/lab2/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project lab_2 /nfs/home/d/de_math/COEN313/lab2/vivado/lab_2 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6280.090 ; gain = 49.773 ; free physical = 12009 ; free virtual = 23866
+add_files -norecurse {/nfs/home/d/de_math/COEN313/lab2/vivado/lab2.vhd /nfs/home/d/de_math/COEN313/lab2/vivado/or3.vhd /nfs/home/d/de_math/COEN313/lab2/vivado/and3.vhd}
+add_files -fileset constrs_1 -norecurse /nfs/home/d/de_math/COEN313/lab2/vivado/lab2.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property target_constrs_file /nfs/home/d/de_math/COEN313/lab2/vivado/lab2.xdc [current_fileset -constrset]
+launch_runs synth_1 -jobs 2
+[Tue May 21 19:29:12 2024] Launched synth_1...
+Run output will be captured here: /nfs/home/d/de_math/COEN313/lab2/vivado/lab_2/lab_2.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:05 . Memory (MB): peak = 6349.191 ; gain = 17.016 ; free physical = 12006 ; free virtual = 23873
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: sums
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 6370.000 ; gain = 20.809 ; free physical = 11332 ; free virtual = 23244
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sums' [/nfs/home/d/de_math/COEN313/lab2/vivado/lab2.vhd:9]
+INFO: [Synth 8-3491] module 'and3_gate' declared at '/nfs/home/d/de_math/COEN313/lab2/vivado/and3.vhd:3' bound to instance 'and1' of component 'and3_gate' [/nfs/home/d/de_math/COEN313/lab2/vivado/lab2.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'and3_gate' [/nfs/home/d/de_math/COEN313/lab2/vivado/and3.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'and3_gate' (1#1) [/nfs/home/d/de_math/COEN313/lab2/vivado/and3.vhd:9]
+INFO: [Synth 8-3491] module 'and3_gate' declared at '/nfs/home/d/de_math/COEN313/lab2/vivado/and3.vhd:3' bound to instance 'and2' of component 'and3_gate' [/nfs/home/d/de_math/COEN313/lab2/vivado/lab2.vhd:43]
+INFO: [Synth 8-3491] module 'and3_gate' declared at '/nfs/home/d/de_math/COEN313/lab2/vivado/and3.vhd:3' bound to instance 'and3' of component 'and3_gate' [/nfs/home/d/de_math/COEN313/lab2/vivado/lab2.vhd:45]
+INFO: [Synth 8-3491] module 'or3_gate' declared at '/nfs/home/d/de_math/COEN313/lab2/vivado/or3.vhd:3' bound to instance 'or1' of component 'or3_gate' [/nfs/home/d/de_math/COEN313/lab2/vivado/lab2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'or3_gate' [/nfs/home/d/de_math/COEN313/lab2/vivado/or3.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'or3_gate' (2#1) [/nfs/home/d/de_math/COEN313/lab2/vivado/or3.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'sums' (3#1) [/nfs/home/d/de_math/COEN313/lab2/vivado/lab2.vhd:9]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 6410.512 ; gain = 61.320 ; free physical = 11333 ; free virtual = 23245
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 6415.504 ; gain = 66.312 ; free physical = 11328 ; free virtual = 23240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 6415.504 ; gain = 66.312 ; free physical = 11328 ; free virtual = 23240
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/home/d/de_math/COEN313/lab2/vivado/lab2.xdc]
+Finished Parsing XDC File [/nfs/home/d/de_math/COEN313/lab2/vivado/lab2.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 6815.699 ; gain = 466.508 ; free physical = 11543 ; free virtual = 23457
+14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:37 . Memory (MB): peak = 6815.699 ; gain = 466.508 ; free physical = 11543 ; free virtual = 23457
+launch_runs impl_1 -jobs 2
+[Tue May 21 19:31:54 2024] Launched impl_1...
+Run output will be captured here: /nfs/home/d/de_math/COEN313/lab2/vivado/lab_2/lab_2.runs/impl_1/runme.log
+write_schematic -format pdf -orientation portrait /nfs/home/d/de_math/COEN313/lab2/vivado/schematic.pdf
+/nfs/home/d/de_math/COEN313/lab2/vivado/schematic.pdf
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 21 19:34:01 2024] Launched impl_1...
+Run output will be captured here: /nfs/home/d/de_math/COEN313/lab2/vivado/lab_2/lab_2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:18:37
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABFA0FA
+set_property PROGRAM.FILE {/nfs/home/d/de_math/COEN313/lab2/vivado/lab_2/lab_2.runs/impl_1/sums.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/nfs/home/d/de_math/COEN313/lab2/vivado/lab_2/lab_2.runs/impl_1/sums.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 21 19:42:26 2024...

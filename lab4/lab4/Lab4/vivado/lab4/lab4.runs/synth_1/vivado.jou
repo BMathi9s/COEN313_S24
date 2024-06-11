@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun  4 18:43:44 2024
+# Process ID: 12212
+# Current directory: /nfs/home/d/de_math/COEN313/Lab4/vivado/lab4/lab4.runs/synth_1
+# Command line: vivado -log lab4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab4.tcl
+# Log file: /nfs/home/d/de_math/COEN313/Lab4/vivado/lab4/lab4.runs/synth_1/lab4.vds
+# Journal file: /nfs/home/d/de_math/COEN313/Lab4/vivado/lab4/lab4.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source lab4.tcl -notrace

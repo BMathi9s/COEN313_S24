@@ -1,0 +1,37 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/d/de_math/Modelsim/Code
+T_opt
+Z1 V=kZ408oY[EgSl5mf:BJA?2
+Z2 04 9 7 work and2_gate example 1
+Z3 =1-c8d9d233c371-6643e99d-41c3c-1613
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.6g;45
+Z7 d/home/d/de_math/Modelsim/Code
+Eand2_gate
+Z8 w1715724529
+Z9 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+R7
+Z10 8and2.vhd
+Z11 Fand2.vhd
+l0
+L3
+Z12 V[f7zng5`YA^CAj?F[nZiK0
+Z13 OL;C;6.6g;45
+Z14 tExplicit 1
+Z15 !s100 RSHD79gLkLe?RURGFX2KL0
+Aexample
+R9
+DEx38 /nfs/home/d/de_math/Modelsim/Code/work 9 and2_gate 0 22 [f7zng5`YA^CAj?F[nZiK0
+32
+Mx1 17 __model_tech/ieee 14 std_logic_1164
+l9
+L9
+Z16 V0V`5`Yzij>Qn^[>WT_OMf2
+R13
+R14
+Z17 !s100 B5hAimK43OZz?DYdb6Hlj0
