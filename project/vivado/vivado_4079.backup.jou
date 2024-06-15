@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jun 12 14:42:35 2024
+# Process ID: 4079
+# Current directory: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado
+# Command line: vivado
+# Log file: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/vivado.log
+# Journal file: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project -part xc7a100tcsg324-1
+add_files -norecurse /nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd
+add_files -fileset constrs_1 -norecurse /nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc
+update_compile_order -fileset sources_1
+set_property target_constrs_file /nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc [current_fileset -constrset]
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait /nfs/home/d/de_math/COEN313/COEN313_S24/project/schematic.pdf
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+write_schematic -format pdf -orientation portrait -force /nfs/home/d/de_math/COEN313/COEN313_S24/project/schematic.pdf
+close_design
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait /nfs/home/d/de_math/COEN313/COEN313_S24/project/elabodesign.pdf
+launch_simulation
+source project.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+write_schematic -format pdf -orientation portrait /nfs/home/d/de_math/COEN313/COEN313_S24/project/lut.pdf
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source project.tcl
+current_wave_config {Untitled 2}
+add_wave {{/project}} 
+close_sim

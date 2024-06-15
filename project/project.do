@@ -10,40 +10,64 @@ force x 0
 force y 0
 force reset 0
 force max_occupancy "000011"
-run 2
+run 1
 
 force x 1
 force y 0
-run 2
+run 1
+force x 0
+force y 0
+run 1
 
 force x 1
 force y 0
-run 2
+run 1
+force x 0
+force y 0
+run 1
 force x 0
 force y 1
-run 2
+run 1
+force x 0
+force y 0
+run 1
 force x 1
 force y 0
-run 2
+run 1
+force x 0
+force y 0
+run 1
 force x 1
 force y 0
-run 2
+run 1
+force x 0
+force y 0
+run 1
 force max_occupancy "000101"
 force reset 1
 force x 0
 force y 0
-run 2
+run 1
 force reset 0
 force x 0
 force y 0
-run 2
+run 1
 force x 1
 force y 0
-run 2
+run 1
+force x 0
+force y 0
+run 1
 force x 0
 force y 1
-run 2
+run 1
+force x 0
+force y 0
+run 1
 force x 0
 force y 1
-run 2
+run 1
+force x 0
+force y 0
+run 1
 

@@ -13,8 +13,8 @@ set_property -dict { PACKAGE_PIN M13 IOSTANDARD LVCMOS33 } [get_ports {max_occup
 set_property -dict { PACKAGE_PIN R15 IOSTANDARD LVCMOS33 } [get_ports {max_occupancy[4]}]
 set_property -dict { PACKAGE_PIN R17 IOSTANDARD LVCMOS33 } [get_ports {max_occupancy[3]}]
 set_property -dict { PACKAGE_PIN T18 IOSTANDARD LVCMOS33 } [get_ports {max_occupancy[2]}]
-set_property -dict { PACKAGE_PIN R17 IOSTANDARD LVCMOS33 } [get_ports {max_occupancy[1]}]
-set_property -dict { PACKAGE_PIN T18 IOSTANDARD LVCMOS33 } [get_ports {max_occupancy[0]}]
+set_property -dict { PACKAGE_PIN U11 IOSTANDARD LVCMOS33 } [get_ports {max_occupancy[1]}]
+set_property -dict { PACKAGE_PIN V12 IOSTANDARD LVCMOS33 } [get_ports {max_occupancy[0]}]
 
 
 # Register count out signals

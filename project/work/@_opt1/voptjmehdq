@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/d/de_math/COEN313/COEN313_S24/project
+T_opt
+Z1 VU3bh?KYHi9LGM>YRFQeec2
+Z2 04 7 7 work project project 1
+Z3 =1-84a93e5e013b-6669ed36-1f3a5-1188
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.6g;45
+Z7 d/home/d/de_math/COEN313/COEN313_S24/project
+T_opt1
+Z8 VM>cX>3[aGJh14];CcHoUS1
+Z9 04 10 10 work project_tb behavioral 1
+Z10 =1-84a93e5e013b-666a0d34-2bd28-7bce
+R4
+Z11 n@_opt1
+R6
+R7
+Eproject
+Z12 w1718226140
+Z13 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+R7
+Z15 8/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd
+Z16 F/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd
+l0
+L5
+Z17 VdNCfz:aJj_bU]0T7FNGaL3
+Z18 OL;C;6.6g;45
+32
+Z19 o-work work -2002 -explicit
+Z20 tExplicit 1
+Z21 !s100 BkSFQePe;dKY4GoOY8;C>1
+Aproject
+R13
+R14
+Z22 DEx4 work 7 project 0 22 dNCfz:aJj_bU]0T7FNGaL3
+l17
+L14
+Z23 VU;3cf4IRN=2LNYbO=7dzc2
+R18
+32
+Z24 Mx2 4 ieee 14 std_logic_1164
+Z25 Mx1 4 ieee 11 numeric_std
+R19
+R20
+Z26 !s100 20:WQQlVQ8D7_KhK2CR`i1
+Eproject_tb
+Z27 w1718226210
+Z28 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+R7
+Z29 8/nfs/home/d/de_math/COEN313/COEN313_S24/project/projecttb.vhd
+Z30 F/nfs/home/d/de_math/COEN313/COEN313_S24/project/projecttb.vhd
+l0
+L4
+Z31 VD@0JXh7N2=Eg>;N7BO3Fm0
+R18
+R19
+R20
+Z32 !s100 KcF6[;Cj`REcB3oTcW6<<1
+Abehavioral
+Z33 DPx17 __model_tech/ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z34 DEx52 /nfs/home/d/de_math/COEN313/COEN313_S24/project/work 7 project 0 22 dNCfz:aJj_bU]0T7FNGaL3
+R28
+Z35 DEx52 /nfs/home/d/de_math/COEN313/COEN313_S24/project/work 10 project_tb 0 22 D@0JXh7N2=Eg>;N7BO3Fm0
+32
+Z36 Mx2 17 __model_tech/ieee 14 std_logic_1164
+Z37 Mx1 17 __model_tech/ieee 11 numeric_std
+l23
+L7
+Z38 V91??in^YI5Wgk`3ACa54E2
+R18
+R19
+R20
+Z39 !s100 :U^C5?nzb`Ed6b;d2g^^E0

@@ -1,0 +1,174 @@
+# //  ModelSim SE-64 6.6g May 23 2012 Linux 3.10.0-1160.118.1.el7.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+project open /nfs/home/d/de_math/COEN313/COEN313_S24/project/projecttb
+# Loading project projecttb
+# 
+#  
+# Compile of project.vhd was successful.
+# Compile of projecttb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+# Compile of projecttb.vhd failed with 1 errors.
+# Compile of projecttb.vhd was successful.
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+# Compile of projecttb.vhd was successful.
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+add wave \
+{sim:/project_tb/reset_tb } \
+{sim:/project_tb/x_tb } \
+{sim:/project_tb/y_tb } \
+{sim:/project_tb/max_occupancy_tb } \
+{sim:/project_tb/z_tb } 
+run
+run
+run
+# Compile of project.vhd was successful.
+# Compile of projecttb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+add wave \
+{sim:/project_tb/reset_tb } \
+{sim:/project_tb/x_tb } \
+{sim:/project_tb/y_tb } \
+{sim:/project_tb/max_occupancy_tb } \
+{sim:/project_tb/z_tb } 
+run
+run
+run
+# Compile of project.vhd was successful.
+# Compile of projecttb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+add wave \
+{sim:/project_tb/reset_tb } \
+{sim:/project_tb/x_tb } \
+{sim:/project_tb/y_tb } \
+{sim:/project_tb/max_occupancy_tb } \
+{sim:/project_tb/z_tb } 
+run
+run
+run
+# Compile of project.vhd was successful.
+# Compile of projecttb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+add wave \
+{sim:/project_tb/reset_tb } \
+{sim:/project_tb/x_tb } \
+{sim:/project_tb/y_tb } \
+{sim:/project_tb/max_occupancy_tb } \
+{sim:/project_tb/z_tb } 
+run
+run
+run
+# Compile of project.vhd was successful.
+# Compile of projecttb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+add wave \
+{sim:/project_tb/reset_tb } \
+{sim:/project_tb/x_tb } \
+{sim:/project_tb/y_tb } \
+{sim:/project_tb/max_occupancy_tb } \
+{sim:/project_tb/z_tb } 
+run
+run
+run
+run
+# Compile of project.vhd was successful.
+# Compile of projecttb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+add wave \
+{sim:/project_tb/reset_tb } \
+{sim:/project_tb/x_tb } \
+{sim:/project_tb/y_tb } \
+{sim:/project_tb/max_occupancy_tb } \
+{sim:/project_tb/z_tb } 
+run
+run
+run
+run
+# Compile of project.vhd was successful.
+# Compile of projecttb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.project_tb
+# vsim work.project_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.project_tb(behavioral)#1
+add wave \
+{sim:/project_tb/reset_tb } \
+{sim:/project_tb/x_tb } \
+{sim:/project_tb/y_tb } \
+{sim:/project_tb/max_occupancy_tb } \
+{sim:/project_tb/z_tb } 
+run
+run
+run
+run
