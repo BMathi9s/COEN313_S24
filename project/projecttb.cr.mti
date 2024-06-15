@@ -1,0 +1,16 @@
+/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity project
+-- Compiling architecture project of project
+
+} {} {}} /nfs/home/d/de_math/COEN313/COEN313_S24/project/projecttb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/d/de_math/COEN313/COEN313_S24/project/projecttb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity project_tb
+-- Compiling architecture behavioral of project_tb
+
+} {} {}}

@@ -1,0 +1,320 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jun 12 14:42:35 2024
+# Process ID: 4079
+# Current directory: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado
+# Command line: vivado
+# Log file: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/vivado.log
+# Journal file: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 6256.457 ; gain = 43.422 ; free physical = 12296 ; free virtual = 23990
+add_files -norecurse /nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd
+add_files -fileset constrs_1 -norecurse /nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc
+update_compile_order -fileset sources_1
+set_property target_constrs_file /nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc [current_fileset -constrset]
+launch_runs synth_1 -jobs 2
+[Wed Jun 12 14:58:03 2024] Launched synth_1...
+Run output will be captured here: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: project
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 6367.941 ; gain = 31.805 ; free physical = 11374 ; free virtual = 23368
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'project' [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd:14]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd:18]
+WARNING: [Synth 8-614] signal 'max_occupancy' is read in the process but is not in the sensitivity list [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'project' (1#1) [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 6416.586 ; gain = 80.449 ; free physical = 11380 ; free virtual = 23376
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 6416.586 ; gain = 80.449 ; free physical = 11380 ; free virtual = 23375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 6416.586 ; gain = 80.449 ; free physical = 11380 ; free virtual = 23375
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal max_occupancy[1] cannot be placed on R17 (IOB_X0Y75) because the pad is already occupied by terminal max_occupancy[3] possibly due to user constraint [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc:16]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal max_occupancy[0] cannot be placed on T18 (IOB_X0Y85) because the pad is already occupied by terminal max_occupancy[2] possibly due to user constraint [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc:17]
+Finished Parsing XDC File [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:42 . Memory (MB): peak = 6806.617 ; gain = 470.480 ; free physical = 10313 ; free virtual = 22380
+6 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:42 . Memory (MB): peak = 6806.617 ; gain = 470.480 ; free physical = 10313 ; free virtual = 22381
+write_schematic -format pdf -orientation portrait /nfs/home/d/de_math/COEN313/COEN313_S24/project/schematic.pdf
+/nfs/home/d/de_math/COEN313/COEN313_S24/project/schematic.pdf
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc]
+Finished Parsing XDC File [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Jun 12 15:12:17 2024] Launched synth_1...
+Run output will be captured here: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Jun 12 15:13:41 2024] Launched impl_1...
+Run output will be captured here: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7134.980 ; gain = 0.000 ; free physical = 10362 ; free virtual = 22530
+Restored from archive | CPU: 0.010000 secs | Memory: 0.043770 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7134.980 ; gain = 0.000 ; free physical = 10362 ; free virtual = 22530
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:38 . Memory (MB): peak = 7277.586 ; gain = 459.965 ; free physical = 10313 ; free virtual = 22481
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+write_schematic -format pdf -orientation portrait -force /nfs/home/d/de_math/COEN313/COEN313_S24/project/schematic.pdf
+/nfs/home/d/de_math/COEN313/COEN313_S24/project/schematic.pdf
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: project
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 7277.586 ; gain = 0.000 ; free physical = 10384 ; free virtual = 22563
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'project' [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd:14]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd:18]
+WARNING: [Synth 8-614] signal 'max_occupancy' is read in the process but is not in the sensitivity list [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'project' (1#1) [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7277.586 ; gain = 0.000 ; free physical = 10398 ; free virtual = 22577
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7277.586 ; gain = 0.000 ; free physical = 10399 ; free virtual = 22578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7277.586 ; gain = 0.000 ; free physical = 10399 ; free virtual = 22578
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc]
+Finished Parsing XDC File [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7277.586 ; gain = 0.000 ; free physical = 10296 ; free virtual = 22476
+5 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+write_schematic -format pdf -orientation portrait /nfs/home/d/de_math/COEN313/COEN313_S24/project/elabodesign.pdf
+/nfs/home/d/de_math/COEN313/COEN313_S24/project/elabodesign.pdf
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj project_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 1384a1ceb5e249368b634e7e702559cf --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot project_behav xil_defaultlib.project -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture project of entity xil_defaultlib.project
+Built simulation snapshot project_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim/xsim.dir/project_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 12 15:34:04 2024...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 7277.586 ; gain = 0.000 ; free physical = 10040 ; free virtual = 22337
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_behav -key {Behavioral:sim_1:Functional:project} -tclbatch {project.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source project.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 7280.738 ; gain = 3.152 ; free physical = 10003 ; free virtual = 22306
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 12 17:08:31 2024] Launched synth_1...
+Run output will be captured here: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 12 17:08:44 2024] Launched synth_1...
+Run output will be captured here: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc]
+Finished Parsing XDC File [/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+write_schematic -format pdf -orientation portrait /nfs/home/d/de_math/COEN313/COEN313_S24/project/lut.pdf
+/nfs/home/d/de_math/COEN313/COEN313_S24/project/lut.pdf
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Jun 12 17:17:14 2024] Launched synth_1...
+Run output will be captured here: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj project_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 1384a1ceb5e249368b634e7e702559cf --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot project_behav xil_defaultlib.project -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture project of entity xil_defaultlib.project
+Built simulation snapshot project_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_behav -key {Behavioral:sim_1:Functional:project} -tclbatch {project.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source project.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/project}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 12 17:18:21 2024...

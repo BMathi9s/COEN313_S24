@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jun 12 17:17:42 2024
+# Process ID: 752
+# Current directory: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim/xsim.dir/project_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project/project.sim/sim_1/behav/xsim/xsim.dir/project_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 12 17:17:42 2024...

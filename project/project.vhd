@@ -20,11 +20,11 @@ begin
         if reset = '1' then
             count <= (others => '0');
         else
-            if x = '1' and count < "111111" then -- Check overflow condition
+            if x = '1' and count < "111111" then --  overflow check
                 count <= std_logic_vector(unsigned(count) + 1); --here arythmetic equation, gotta pass
                 --count <= count + 1;
                 -- class and tutorial said we had to do that, but works  
-            elsif y = '1' and count > "000000" then -- Check underflow condition
+            elsif y = '1' and count > "000000" then -- underflow Check
                 count <= std_logic_vector(unsigned(count) - 1);
                 --count <= count - 1;
             end if;

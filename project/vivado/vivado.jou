@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jun 12 17:20:07 2024
+# Process ID: 1336
+# Current directory: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado
+# Command line: vivado
+# Log file: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/vivado.log
+# Journal file: /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_simulation /nfs/home/d/de_math/COEN313/COEN313_S24/project/vivado/project_simulation -part xc7a100tcsg324-1
+add_files -norecurse {/nfs/home/d/de_math/COEN313/COEN313_S24/project/projecttb.vhd /nfs/home/d/de_math/COEN313/COEN313_S24/project/project.vhd}
+add_files -fileset constrs_1 -norecurse /nfs/home/d/de_math/COEN313/COEN313_S24/project/project.xdc
+update_compile_order -fileset sources_1
+launch_simulation
+source project_tb.tcl
+close_sim
