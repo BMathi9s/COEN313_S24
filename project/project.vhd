@@ -12,8 +12,8 @@ entity project is
 end project;
 
 architecture project of project is
-    signal count : unsigned(5 downto 0) := (others => '0');
-    signal max_occ : unsigned(5 downto 0) := "111111"; --by default set to 63
+    signal count : std_logic_vector(5 downto 0) := (others => '0');
+    signal max_occ : std_logic_vector(5 downto 0) := "111111"; --by default set to 63
 begin
     process(reset, x, y)
     begin 
@@ -21,18 +21,18 @@ begin
             count <= (others => '0');
         else
             if x = '1' and count < "111111" then -- Check overflow condition
-                --count <= std_logic_vector(unsigned(count) + 1); --here arythmetic equation, gotta pass
-                count <= count + 1;
+                count <= std_logic_vector(unsigned(count) + 1); --here arythmetic equation, gotta pass
+                --count <= count + 1;
                 -- class and tutorial said we had to do that, but works  
             elsif y = '1' and count > "000000" then -- Check underflow condition
-                -- count <= std_logic_vector(unsigned(count) - 1);
-                count <= count - 1;
+                count <= std_logic_vector(unsigned(count) - 1);
+                --count <= count - 1;
             end if;
         end if;
         
-        max_occ <= unsigned(max_occupancy); -- setting up the max 
+        max_occ <= max_occupancy; -- setting up the max 
         --set output
-        if count = unsigned(max_occupancy) then
+        if count = max_occupancy then
             z <= '1';
         else
             z <= '0';
